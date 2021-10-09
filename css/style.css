@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+
+h2 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.annual {
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+p, a:not(:first-of-type) {
+  color: hsl(224, 23%, 55%);
+}
+
+article {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.order {
+  border-radius: 1em;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+header img {
+  border-radius: 1em 1em 0 0;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f7ff;
+  border-radius: 1em;
+  text-align: left;
+  padding: 1em;
+}
+.plan p {
+  margin: 0;
+}
+
+.container {
+  padding: 1em;
+}
+
+.payment a {
+  text-decoration: none;
+  border-radius: 1em;
+  display: block;
+  padding-block: 1em;
+  font-weight: 700;
+}
+.payment :first-child {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+}
+
+section {
+  margin-bottom: 1.5em;
+}
+
+.payment :first-child:active {
+  background-color: hsl(225, 100%, 94%);
+  
+}
