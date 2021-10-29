@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
+html,
+body {
+  height: 100%;
+  overflow: auto;
+
+}
+
 body {
   font-family: 'Red Hat Display', sans-serif;
   background-color: hsl(225, 100%, 94%);
@@ -9,21 +16,29 @@ h2 {
   font-weight: 900;
   color: hsl(223, 47%, 23%);
 }
+
 .annual {
   font-weight: 700;
   color: hsl(223, 47%, 23%);
 }
+
 p {
   font-size: 16px;
   font-weight: 500;
 }
 
-p, a:not(:first-of-type) {
+p,
+a:not(:first-of-type) {
   color: hsl(224, 23%, 55%);
 }
 
-article {
+main {
   text-align: center;
+  height: calc(100% - 2em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
 }
 
 img {
@@ -35,8 +50,9 @@ img {
   border-radius: 1em;
   background-color: #fff;
   width: 80%;
-  margin: 0 auto;
+  max-width: 450px;
 }
+
 header img {
   border-radius: 1em 1em 0 0;
 }
@@ -50,6 +66,7 @@ header img {
   text-align: left;
   padding: 1em;
 }
+
 .plan p {
   margin: 0;
 }
@@ -65,6 +82,7 @@ header img {
   padding-block: 1em;
   font-weight: 700;
 }
+
 .payment :first-child {
   background-color: hsl(245, 75%, 52%);
   color: white;
@@ -76,5 +94,14 @@ section {
 
 .payment :first-child:active {
   background-color: hsl(225, 100%, 94%);
-  
+
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+   
+  }
+
 }
