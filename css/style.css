@@ -88,7 +88,7 @@ header img {
   color: white;
 }
 
-section {
+section::not(.order) {
   margin-bottom: 1.5em;
 }
 
